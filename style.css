@@ -1,0 +1,213 @@
+Here is the CSS program for the responsive landing page:
+
+
+/* styles.css */
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #3e8e41;
+}
+
+/* Features Section Styles */
+
+.features {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+.feature {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    margin-right: 10px;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+/* Testimonials Section Styles */
+
+.testimonials {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action Section Styles */
+
+.call-to-action {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #3e8e41;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        margin-bottom: 20px;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonial {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .feature {
+        padding: 10px;
+    }
+    .testimonial {
+        padding:
